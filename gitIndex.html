@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git And GitHub Helper</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="../mainfiles/bootstrqap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+</head>
+
+<body>
+    <div class="nav ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 align-self-center ">
+                    <img src="github-mark.png" alt="git LOGO are missing" id="git-logo" class="ml-md-5">
+                </div>
+                <div class="col-md-6 align-item-center">
+                    <h1 class="pt-3">Git And GitHub master</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <ul>
+                        <li id="home"><a href="#">HOME</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- novigation bar end -->
+
+
+    <div id="templet">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-7">
+                    <h2>Git to Help develpers to version control </h2>
+
+                </div>
+                <div class="col col-md-7 mt-3 mb-md-5">
+                    <p>Git is the free and open source distributed version control system that's responsible for everything GitHub 
+                        related that happens locally on your computer. This cheat sheet features the most important and commonly 
+                        used Git commands for easy reference.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center"><h1>introduction</h1></div>
+                <div class="col-md-6 col-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam non, quasi provident natus officiis omnis in eaque accusamus ducimus cum repellat et dolorem numquam dicta laudantium impedit ea vitae odit. Facere, maxime architecto! Minima aut eligendi accusantium tempora, cupiditate quis earum fugiat voluptatem, dolorum nihil praesentium ipsum soluta impedit adipisci.
+                </div>
+                <div class="col-md-6 col12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam non, quasi provident natus officiis omnis in eaque accusamus ducimus cum repellat et dolorem numquam dicta laudantium impedit ea vitae odit. Facere, maxime architecto! Minima aut eligendi accusantium tempora, cupiditate quis earum fugiat voluptatem, dolorum nihil praesentium ipsum soluta impedit adipisci.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-1">
+        <div class="container">
+            <h2 class="text-center text-secondary pt-md-5">Git commands </h2>
+            <div class="row p-md-5" id="git-cmd-btns">
+
+                <div id="setup" class="col-6 col-sm-4 col-lg-2 m-md-2 m-0"><button
+                        class="btn btn-outline-danger">SerUp</button></div>
+                <div id="init" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">SetUp &
+                        Init</button></div>
+                <div id="stage" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Stage &
+                        Snapshot</button></div>
+                <div id="barnch" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Branch &
+                        merge</button></div>
+                <div id="inspect" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Inspect &
+                        Compare</button></div>
+                <div id="update" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Share &
+                        Update</button></div>
+                <div id="tracking" class="col-6 col-sm-4 mr-sm-5 col-lg-2 m-md-2"><button id="gbtn"
+                        class="btn btn-outline-danger">tracking
+                        Path Changes</button></div>
+                <div id="history" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">ReWrite
+                        History</button></div>
+                <div id="ignoring" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Ignoring
+                        Patterns</button></div>
+                <div id="tem-commit" class="col-6 col-sm-4 col-lg-2 m-md-2 "><button id="gbtn"
+                        class="btn btn-outline-danger">Temporary Commit</button></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="section-2">
+        <div class="container" id="txt">
+            <div class="row content-1">
+
+
+                <div class="col-6 hide text-right " id="display-setup-1">
+                    <button class="btn btn-set btn-primary" id="btn-set">SET REPOSITORY INFO</button>
+                    <ul class="row content-1 text-right hide" id="set-list">
+                        <li><button id="set-name" class="btn btn-outline-success ">Set Name</button></li>
+                        <li><button id="set-email" class="btn btn-outline-success">Set Email</button></li>
+                        <li><button id="set-ui-color" class="btn btn-outline-success">Set Ui-color</button></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-6 hide text-left " id="display-setup-2">
+                    <button class="btn btn-check btn-primary" id="btn-check">CHECK REPOSITORY INFO</button>
+                    <ul class=" content-2 text-left hide" id="check-list">
+                        <li><button class="btn btn-outline-success" id="check-name">Check Name</button></li>
+                        <li><button class="btn btn-outline-success" id="check-email">Check Email</button></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-3">
+                    <button class="btn btn-check btn-primary" id="btn-init">SETUP & INIT REPOSITORY INFO</button>
+                    <ul class=" content-3 hide text-center" id="init-list">
+                        <li><button class="btn btn-outline-success" id="git-init">Git Init</button></li>
+                        <li><button class="btn btn-outline-success" id="git-clone">Git Clone</button></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-4">
+                    <button class="btn btn-check btn-primary" id="btn-stage">STAGE & SNAPSHOT REPOSITORY
+                        INFO</button>
+                    <ul class=" content-4 hide text-center" id="stage-list">
+                        <li><button class="btn btn-outline-success" id="git-status">Git Status</button></li>
+                        <li><button class="btn btn-outline-success" id="git-addFile">Git Add File</button></li>
+                        <li><button class="btn btn-outline-success" id="git-resetFile">Git Reset File</button></li>
+                        <li><button class="btn btn-outline-success" id="git-diffChange">Git Diff Changes</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-diffStage">Git diff staged</button></li>
+                        <li><button class="btn btn-outline-success" id="git-commit">Git Commit</button></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-5">
+                    <button class="btn btn-check btn-primary" id="btn-branch">BRANCH & MERGE REPOSITORY
+                        INFO</button>
+                    <ul class=" content-5 hide text-center" id="branch-list">
+                        <li><button class="btn btn-outline-success" id="git-activeBranch">Git Active Branch</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-createBranch">Git Create Branch</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-switchBranch">Git Switch & Checkout
+                                Branch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-mergeBranch">Git Merge Branch</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-HistoryBranch">Git Current Branch
+                                History</button></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 text-center hide " id="display-setup-6">
+                    <button class="btn btn-check btn-primary" id="btn-inspect">INSPECT & COMPARE REPOSITORY
+                        INFO</button>
+                    <ul class=" content-6 hide text-center" id="inspect-list">
+                        <li><button class="btn btn-outline-success" id="git-log">Git Log</button></li>
+                        <li><button class="btn btn-outline-success" id="git-commitBranch">Git Commit
+                                branches</button></li>
+                        <li><button class="btn btn-outline-success" id="git-rename">Git File Across Renames</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-diffBranch">Git Diff Branches</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-showObject">Git Show Object</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-7">
+                    <button class="btn btn-check btn-primary" id="btn-update">SHARE & UPDATE REPOSITORY
+                        INFO</button>
+                    <ul class=" content-7 hide text-center" id="update-list">
+                        <li><button class="btn btn-outline-success" id="git-remoteAdd">Git Remote Add</button></li>
+                        <li><button class="btn btn-outline-success" id="git-fetch">Git Fetch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-mergeBranchUp">Git Merge
+                                Breanch</button></li>
+                        <li><button class="btn btn-outline-success" id="git-pushBranch">Git Push Branches</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-pullBranch">Git pull Branch</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 hide text-center" id="display-setup-8">
+                    <button class="btn btn-check btn-primary" id="btn-tracking">TRACKING PATH CHANGES REPOSITORY
+                        INFO</button>
+                    <ul class=" content-8 hide text-center" id="tracking-list">
+                        <li><button class="btn btn-outline-success" id="git-removal">Git Removal Commit</button>
+                        </li>
+                        <li><button class="btn btn-outline-success" id="git-moveStage">Git Move Stage</button></li>
+                        <li><button class="btn btn-outline-success" id="git-movePath">Git Move Path</button></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-9">
+                    <button class="btn btn-check btn-primary" id="btn-rewrite">REWRITE HISTORY REPOSITORY
+                        INFO</button>
+                    <ul class=" content-9 hide text-center" id="rewrite-list">
+                        <li><button class="btn btn-outline-success" id="git-rebase">Git Rebase</button></li>
+                        <li><button class="btn btn-outline-success" id="git-clrStage">Git Clear Stage Area</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-10">
+                    <button class="btn btn-check btn-primary" id="btn-ignore">IGNORING PATTERNS REPOSITORY
+                        INFO</button>
+                    <ul class=" content-10 hide text-center" id="ignore-list">
+                        <li><button class="btn btn-outline-success" id="git-ignore">Git IGNORE</button></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 text-center hide " id="display-setup-11">
+                    <button class="btn btn-check btn-primary" id="btn-temporary">TEMPORARY COMMITS REPOSITORY
+                        INFO</button>
+                    <ul class=" content-11 hide text-center" id="temporary-list">
+                        <li><button class="btn btn-outline-success" id="git-stash">Git Stash</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashList">Git Stash List</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashPop">Git Stash Pop</button></li>
+                        <li><button class="btn btn-outline-success" id="git-stashDrop">Git Stash Drop</button></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div id="result" class="m-auto">
+
+                    <h2 class="text-dark" style="opacity: 0.8;">Wel-come Git Master</h2>
+                    <!-- Setup content -->
+
+                    <div id="setup-content">
+                        <div id="set-name-value" class="hide">
+                            <h4><b>git config --global user.name “[firstname lastname]”</b></h4><br><br>
+                            <p>set a name that is identifiable for credit when review version history</p>
+                        </div>
+
+                        <div class="hide" id="set-email-value">
+                            <h4>
+                                <b>git config --global user.email “[valid-email]”</b>
+                            </h4><br><br>
+                            <p>set an email address that will be associated with each history marker</p>
+                        </div>
+                        <div id="set-ui-color-value" class="hide">
+                            <h4>
+                                <b>git config --global color.ui auto</b>
+                            </h4><br><br>
+                            <p>set automatic command line coloring for Git for easy reviewing</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="check-content">
+                        <div id="check-name-value" class="hide">
+                            <h4><b>git config --global user.name</b></h4><br><br>
+                            <p>check a name that is identifiable for credit when review version history</p>
+                        </div>
+
+                        <div id="check-email-value" class="hide">
+                            <h4><b>git config --global user.email</b></h4><br><br>
+                            <p>check an email address that will be associated with each history marker</p>
+                        </div>
+                    </div>
+
+                    <!-- init content -->
+
+                    <div id="init-content">
+                        <div id="init-value" class="hide">
+                            <h4><b>git init</b></h4><br><br>
+                            <p>initialize an existing directory as a Git repository</p>
+                        </div>
+
+                        <div id="clone-value" class="hide">
+                            <h4><b>git clone [url]</b></h4><br><br>
+                            <p>retrieve an entire repository from a hosted location via URL
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- stage contant -->
+
+                    <div id="stage-content">
+                        <div id="status-value" class="hide">
+                            <h4><b>git status</b></h4><br><br>
+                            <p>show modified files in working directory, staged for your next commit</p>
+                        </div>
+
+                        <div id="add-value" class="hide">
+                            <h4><b>git add [file] </b></h4><br><br>
+                            <p>add a file as it looks now to your next commit (stage)
+                            </p>
+                        </div>
+
+                        <div id="reset-value" class="hide">
+                            <h4><b>git reset [file] </b></h4><br><br>
+                            <p>unstage a file while retaining the changes in working directory</p>
+                        </div>
+
+                        <div id="diff-value" class="hide">
+                            <h4><b>git diff </b></h4><br><br>
+                            <p>diff of what is changed but not staged</p>
+                        </div>
+
+                        <div id="diff-stage-value" class="hide">
+                            <h4><b>git diff --staged </b></h4><br><br>
+                            <p>diff of what is staged but not yet commited</p>
+                        </div>
+
+                        <div id="commit-value" class="hide">
+                            <h4><b>git commit -m “[descriptive message]” </b></h4><br><br>
+                            <p>commit your staged content as a new commit snapshot</p>
+                        </div>
+
+
+                    </div>
+
+                    <div id="branch-content">
+                        <div id="branch-value" class="hide">
+                            <h4><b>git branch </b></h4><br><br>
+                            <p>list your branches. a * will appear next to the currently active branch</p>
+                        </div>
+
+                        <div id="create-branch-value" class="hide">
+                            <h4><b>git branch [branch-name]</b></h4><br><br>
+                            <p>create a new branch at the current commi</p>
+                        </div>
+
+                        <div id="checkout-value" class="hide">
+                            <h4><b>git checkout</b></h4><br><br>
+                            <p>switch to another branch and check it out into your working directory</p>
+                        </div>
+
+                        <div id="merge-value" class="hide">
+                            <h4><b>git merge [branch] </b></h4><br><br>
+                            <p>merge the specified branch’s history into the current one</p>
+                        </div>
+
+                        <div id="log-value" class="hide">
+                            <h4><b>git log</b></h4><br><br>
+                            <p>show all commits in the current branchs history</p>
+                        </div>
+                    </div>
+
+
+                    <div id="inspect-content">
+                        <div id="git-log-value" class="hide">
+                            <h4><b>git log</b></h4><br><br>
+                            <p>show the commit history for the currently active branch</p>
+                        </div>
+
+                        <div id="log-branch-value" class="hide">
+                            <h4><b>git log branchB..branchA</b></h4><br><br>
+                            <p>show the commits on branchA that are not on branchB</p>
+                        </div>
+
+                        <div id="log-follow-value" class="hide">
+                            <h4><b>git log --follow [file]</b></h4><br><br>
+                            <p>show the commits that changed file, even across renames</p>
+                        </div>
+
+                        <div id="diff-branch-value" class="hide">
+                            <h4><b>git diff branchB...branchA</b></h4><br><br>
+                            <p>show the diff of what is in branchA that is not in branchB</p>
+                        </div>
+
+                        <div id="show-value" class="hide">
+                            <h4><b>git show [SHA]</b></h4><br><br>
+                            <p>show any object in Git in human-readable format</p>
+                        </div>
+                    </div>
+
+                    <div id="share-content">
+                        <div id="remote-value" class="hide">
+                            <h4><b>git remote add [alias] [url]</b></h4><br><br>
+                            <p>add a git URL as an alias</p>
+                        </div>
+
+                        <div id="fetch-value" class="hide">
+                            <h4><b>git fetch [alias]</b></h4><br><br>
+                            <p>fetch down all the branches from that Git remote</p>
+                        </div>
+
+                        <div id="merge-alias-branch-value" class="hide">
+                            <h4><b>git merge [alias]/[branch]</b></h4><br><br>
+                            <p>merge a remote branch into your current branch to bring it up to date</p>
+                        </div>
+
+                        <div id="push-branch-value" class="hide">
+                            <h4><b>git push [alias] [branch]</b></h4><br><br>
+                            <p>Transmit local branch commits to the remote repository branch</p>
+                        </div>
+
+                        <div id="pull-value" class="hide">
+                            <h4><b>git pull</b></h4><br><br>
+                            <p>fetch and merge any commits from the tracking remote branch</p>
+                        </div>
+                    </div>
+
+
+                    <div id="tracking-content">
+                        <div id="rm-value" class="hide">
+                            <h4><b>git rm [file]</b></h4><br><br>
+                            <p>delete the file from project and stage the removal for commit</p>
+                        </div>
+
+                        <div id="mv-value" class="hide">
+                            <h4><b>git mv [existing-path] [new-path]</b></h4><br><br>
+                            <p>change an existing file path and stage the move</p>
+                        </div>
+
+                        <div id="log-stat-value" class="hide">
+                            <h4><b>git log --stat -M</b></h4><br><br>
+                            <p>show all commit logs with indication of any paths that moved</p>
+                        </div>
+                    </div>
+
+                    <div id="rewrite-content">
+                        <div id="rebase-value" class="hide">
+                            <h4><b>git rebase [branch]</b></h4><br><br>
+                            <p>apply any commits of current branch ahead of specified one</p>
+                        </div>
+
+                        <div id="reset-hard-value" class="hide">
+                            <h4><b>git reset --hard [commit]</b></h4><br><br>
+                            <p>clear staging area, rewrite working tree from specified commit</p>
+                        </div>
+                    </div>
+
+                    <div id="ignore-content">
+                        <div id="ignoring-value" class="hide">
+
+                            <h4><b>logs/ <br>
+                                    *.notes <br>
+                                    pattern*/</b></h4><br><br>
+
+                            <p>Save a file with desired paterns as .gitignore with either direct string
+                                matches or wildcard globs.</p>
+
+                            <h4><b>git config --global core.excludesfile [file]</b></h4><br><br>
+                            <p>system wide ignore patern for all local repositories</p>
+                        </div>
+                    </div>
+
+                    <div id="temporary">
+                        <div id="stash-value" class="hide">
+                            <h4><b>git stash</b></h4><br><br>
+                            <p>Save modified and staged changes</p>
+                        </div>
+
+                        <div id="stash-list-value" class="hide">
+                            <h4><b>git stash list</b></h4><br><br>
+                            <p>list stack-order of stashed file changes</p>
+                        </div>
+
+                        <div id="stash-pop-value" class="hide">
+                            <h4><b>git stash pop</b></h4><br><br>
+                            <p>write working from top of stash stack</p>
+                        </div>
+
+                        <div id="stash-drop-value" class="hide">
+                            <h4><b>git stash drop</b></h4><br><br>
+                            <p>discard the changes from top of stash stack</p>
+                        </div>
+                    </div>
+                    <!-- 
+                            <div id="" class="hide">
+                            <h4><b>git </b></h4><br><br>
+                            <p></p>
+                            </div>
+                        -->
+
+                </div> <!--   result close -->
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../mainfiles/jQuery/jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
